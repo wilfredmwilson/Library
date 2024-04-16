@@ -1,0 +1,43 @@
+<html>	
+
+<head>
+<title>Library</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2 class="heading">Library</h2>
+   
+    <button id="adding-details">ADD NEW BOOK</button>
+    <div class="formm">
+    <form id="add-book-form" style="display: none;">
+        <label for="name"></label>
+        NAME.:<input type="text" id="name"><br>
+        <label for="author"></label>
+        AUTHOR:<input type="text" id="author"><br>
+        <label for="pages"></label>
+        PAGES:<input type="number" id="pages"><br>
+        <label for="price"></label>
+        PRICE:<input type="number" id="price"><br>
+        <button id="add-book-button" value="submit">ADD BOOK</button>
+    </form>
+    </div>
+    <table id="book-table" style="display: none;">
+        
+        <thead>
+            <tr>
+                
+                <th>NAME</th>
+                <th>AUTHOR</th>
+                <th>PAGES</th>
+                <th>PRICE</th>
+                <th>Readed or Not</th>
+                <th style="text-align:center"; colspan="2">STATUS</th>
+            </tr>
+        </thead>
+        <tbody id="book-details"></tbody>
+        </table>
+    <script src="script.js"></script>
+</body>
+</html>
